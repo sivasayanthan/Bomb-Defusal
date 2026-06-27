@@ -33,14 +33,17 @@ const countdown = setInterval(function(){
 
     if(time <= 0){
 
-        clearInterval(countdown);
+    clearInterval(countdown);
 
-        message.innerHTML = "💥 BOOM! The bomb exploded.";
+    message.innerHTML =
+"💥 BOOM! The bomb exploded.<br><br>" +
+"✅ Correct Code: <span style='color:yellow;'>" + secretCode + "</span>" +
+"<br><br><button onclick='location.reload()'>🔄 Play Again</button>";
 
-        message.style.color = "red";
+    message.style.color = "red";
 
-        input.disabled = true;
-        button.disabled = true;
+    input.disabled = true;
+    button.disabled = true;
 
     }
 
@@ -52,7 +55,9 @@ button.addEventListener("click", function(){
 
         clearInterval(countdown);
 
-        message.innerHTML = "🎉 Bomb Defused Successfully!";
+        message.innerHTML =
+"🎉 Bomb Defused Successfully!<br><br>" +
+"<button onclick='location.reload()'>🔄 Play Again</button>";
 
         message.style.color = "lime";
 
