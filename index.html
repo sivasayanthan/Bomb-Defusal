@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomb Defusal Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>💣 Bomb Defusal</h1>
+
+        <p class="mission">
+            Enter the correct 4-digit code before the timer reaches zero!
+        </p>
+
+        <div class="timer">
+            Time Left:
+            <span id="timer">60</span>
+            Seconds
+        </div>
+
+        <div class="bomb">
+            💣
+        </div>
+
+        <input
+            type="text"
+            id="codeInput"
+            maxlength="4"
+            placeholder="Enter 4-digit code"
+        >
+
+        <br><br>
+
+        <button id="defuseBtn">
+            DEFUSE
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+  </html>
